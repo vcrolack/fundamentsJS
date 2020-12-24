@@ -6,7 +6,7 @@ function Persona(nombre, apellido, estatura) {
 
 Persona.prototype.saludar = function () {
     console.log(`Hola. Me llamo ${this.nombre} ${this.apellido}`);
-}
+} 
 
 Persona.prototype.eresONoAlto = function() {
     if (this.estatura > 1.8) {
@@ -14,7 +14,18 @@ Persona.prototype.eresONoAlto = function() {
     } else {
         console.log(`Mala suerte, ${this.nombre}, eres bajo`);
     }
-}
+} 
+
+/* Persona.prototype.saludar = () => {
+    console.log(`Hola. Me llamo ${this.nombre} ${this.apellido}`);
+} */
+/* 
+Persona.prototype.soyAlto = () => {
+    //this en el espacio global es window
+    return this.altura > 1.8
+
+    No usar arrows functions para estos metodos
+} */
 
 
 
